@@ -276,19 +276,19 @@
 
 
 
-jQuery(document).ready(function() {
-// tooltip demo
-    $('.tooltips').tooltip({
-      selector: "a[class=tooltip]"
-    })
+// jQuery(document).ready(function() {
+// // tooltip demo
+//     $('.tooltips').tooltip({
+//       selector: "a[class=tooltip]"
+//     })
 
-    $('.tooltip-test').tooltip()
-    $('.popover-test').popover()
+//     $('.tooltip-test').tooltip()
+//     $('.popover-test').popover()
 
-    // popover demo
-    $("a[class=popover]")
-      .popover()
-      .click(function(e) {
-        e.preventDefault()
-      })
-});
+//     // popover demo
+//     $("a[class=popover]")
+//       .popover()
+//       .click(function(e) {
+//         e.preventDefault()
+//       })
+// });
