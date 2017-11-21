@@ -28,6 +28,7 @@
 	<script src="js/modernizr.custom.js" type="text/javascript"></script> <!-- Modernizr -->
     <script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script> <!-- tabs, toggles, accordion -->
     <script src="js/custom.js" type="text/javascript"></script> <!-- jQuery initialization -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
   
     <!-- Responsive Menu -->
     <script src="js/jquery.meanmenu.js"></script> 
@@ -62,6 +63,10 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!-- flexslider -->
+	<link type="text/css" rel="stylesheet" href="css/flexslider.css">
+	<script src="js/jquery.flexslider.js"></script>
 
 </head>
 <body>
@@ -199,52 +204,46 @@
 </div>
 </header><!-- header -->
 
-	
-    <!-- REVOLUTION SLIDER
-	============================================= -->
-	<div class="fullwidthbanner-container top-shadow">
-		<div class="fullwidthbanner">
-			<ul>
-				<!-- Slide 1 -->
-				<li data-transition="boxfade" data-slotamount="2" data-masterspeed="300">
-				<!-- Main Image -->
-				<img src="images/slider/Slider-1.jpg" alt="">
-				<!-- End Main Image -->
-				</li>
-				<!-- End Slide 1 -->
-				<!-- Slide 2 -->
-				<li data-transition="boxfade" data-slotamount="3" data-masterspeed="300">
-				<!-- Main Image -->
-				<img src="images/slider/Slider-2.jpg" alt="">
-				<!-- End Main Image -->
-				</li>
-				<!-- End Slide 2 -->
-				<!-- Slide 3 -->
-				<li data-transition="boxfade" data-slotamount="4" data-masterspeed="300">
-				<!-- Main Image -->
-				<img src="images/slider/Slider-3.jpg" alt="">
-				<!-- End Main Image -->
-				</li>
-				<!-- End Slide 3 -->
-				<!-- Slide 4 -->
-				<li data-transition="boxfade" data-slotamount="5" data-masterspeed="300">
-				<!-- Main Image -->
-				<img src="images/slider/Slider-4.jpg" alt="">
-				<!-- End Main Image -->
-				</li>
-				<!-- End Slide 4-->
-			</ul>
-		</div>
-	</div>
-	<!-- END REVOLUTION SLIDER
-	============================================= -->
-<div class="copyrights">Design by <a href="http://www.i-arche.com/" >i-Arche</a></div>
 <div class="container">
-
-<div class="sixteen columns welcome">
-<h3>竹東社區大學，您學習的好夥伴。</h3>
+  <div class="sixteen columns welcome">
+    <h3>竹東社區大學，您學習的好夥伴。</h3>
+  </div>
 </div>
 
+<div id="header-banner-1">
+  <div class="flexslider">
+        
+    <div class="flex-viewport" style="overflow: hidden; position: relative;">
+      <ul class="slides" style="width: 1600%; transition-duration: 0s; transform: translate3d(-2900px, 0px, 0px);">
+        <li class="clone" aria-hidden="true" style="width: 580px; float: left; display: block;">
+          <img src="images/slider/Slider-1.jpg" alt="" draggable="false">
+          <p class="flex-caption">104春季成果發表會</p>
+        </li>
+
+        <li style="width: 580px; float: left; display: block;" class="">
+          <img src="images/slider/Slider-2.jpg" alt="" draggable="false">
+          <p class="flex-caption">106休閒農業區</p>
+        </li>
+        
+        <li class="" style="width: 580px; float: left; display: block;">
+          <img src="images/slider/Slider-3.jpg" alt="" draggable="false">
+          <p class="flex-caption">教師研習會議</p>
+        </li>
+        
+        <li class="" style="width: 580px; float: left; display: block;">
+          <img src="images/slider/Slider-4.jpg" alt="" draggable="false">
+          <p class="flex-caption">公民素養週</p>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="copyrights">Design by <a href="http://www.i-arche.com/" >i-Arche</a></div>
+<div class="container">
 <div class="separator"></div>
 
 				<div class="four columns">
@@ -374,7 +373,7 @@
 			<ul id="flexiselDemo2">
             <li><img src="images/client1.png" alt="" /></li>
             <li><img src="images/client2.png" alt="" /></li>
-<!--             <li><img src="images/client3.png" alt= "" /></li> -->
+            <li><img src="images/client3.png" alt= "" /></li>
             <li><img src="images/client4.png" alt= "" /></li>
             <li><img src="images/client5.png" alt= "" /></li>
             </ul>
@@ -418,18 +417,18 @@
 							<div class="latest-project-item">
 								<a href="#"><img src="images/elements/rp-2.jpg" alt=""></a>
 							</div>
-							<div class="latest-project-item">
+							<!-- <div class="latest-project-item">
 								<a href="#"><img src="images/elements/rp-3.jpg" alt=""></a>
-							</div>
+							</div> -->
 							<div class="latest-project-item">
 								<a href="#"><img src="images/elements/rp-4.jpg" alt=""></a>
 							</div>
 							<div class="latest-project-item">
 								<a href="#"><img src="images/elements/rp-5.jpg" alt=""></a>
 							</div>
-							<div class="latest-project-item">
+							<!-- <div class="latest-project-item">
 								<a href="#"><img src="images/elements/rp-6.jpg" alt=""></a>
-							</div>
+							</div> -->
 						</div>
 </div>
 <div class="four columns">
@@ -494,6 +493,13 @@
 </footer><!-- footer -->
 
 <script type="text/javascript">
+
+$(window).load(function() {
+  $('.flexslider').flexslider({
+  	mousewheel: false,
+    animation: "slide"
+  });
+});
 
 $(window).load(function() {
 	$("#flexiselDemo2").flexisel({
