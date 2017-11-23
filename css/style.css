@@ -162,9 +162,10 @@ a.work-name:hover {
 
 #ontopDiv {
     position: fixed;
+    margin-left: 10%;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     z-index: 10000;
     background-color: rgba(4, 191, 234, 0.61);
     border-width: 1px;
@@ -1128,7 +1129,7 @@ background: url(../images/nextArrow.png) no-repeat center center #E6E6E6;
 }
 
 .welcome h3 {
-	margin-top: 110px;
+	margin-top: 12%;
     font-weight: 100 !important;
 	font-size: 24px;
 	color: #444444;
@@ -1460,7 +1461,8 @@ img.center {
 }
 
 img {
-	max-width: 100%;
+	max-width: 80%;
+	margin-left: 10%; 
 	border: none;
 }
 
@@ -3096,7 +3098,9 @@ input.captcha[type=text] {
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 	.desc { margin-bottom: 20px !important; }
-	.welcome h3 { font-size: 20px; }
+	.welcome h3 { 
+        margin-top: 23%;
+		font-size: 20px; }
 	}
 
 
