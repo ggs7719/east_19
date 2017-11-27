@@ -154,7 +154,7 @@ a.work-name:hover {
 }
 
 .logo {
-	margin-left: -30%;
+	margin-left: -15%;
     margin-top: 15px !important;
     width: 150%;
 }
@@ -188,7 +188,7 @@ position:relative;
 nav.main_menu > ul > li > a {
 padding:23px 22px; 
 display:block; 
-font-size:20px; 
+font-size:18px; 
 color:#393939; 
 font-weight:bold; 
 text-transform:uppercase; 
@@ -1463,9 +1463,10 @@ img.center {
 }
 
 img {
-	max-width: 1200px;
-	margin-left: 10%; 
+	/*margin-left: 10%; */
 	border: none;
+	display:block; 
+	margin:auto;
 }
 
 .full-shadow {
